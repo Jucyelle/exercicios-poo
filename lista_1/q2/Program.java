@@ -11,14 +11,12 @@ public class Program {
     Rectangle rect = new Rectangle();
 
     System.out.println("Enter rectangle width and height:");
-    double width = sc.nextDouble();
-    rect.setWidth(width);
-    double height = sc.nextDouble();
-    rect.setHeight(height);
+    rect.setWidth(sc.nextDouble());
+    rect.setHeight(sc.nextDouble());
 
     System.out.printf("AREA = %.2f%n", rect.area());
     System.out.printf("PERIMETER = %.2f%n", rect.perimeter());
     System.out.printf("DIAGONAL = %.2f%n", rect.diagonal());
     sc.close();
-}
+  }
 }
